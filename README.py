@@ -3,3 +3,4 @@ import pandas as pd
 
 df = pd.read_csv("deputados_2022.csv")
 
+st.title('analise dos deputados por partido')
