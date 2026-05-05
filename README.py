@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+df = pd.read_csv("deputados_2022.csv")
 
 st.title("Análise de Deputados 2018")
 
