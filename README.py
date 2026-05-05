@@ -2,12 +2,12 @@ import pandas as pd
 df = pd.read_csv
 import pandas as pd
 
-print(df.columns)
+df.columns = df.columns.str.strip().str.lower()
 
 df = df.rename(columns={
-    "QT_VOTOS": "votos",
-    "DS_GENERO": "sexo",
-    "NM_CANDIDATO": "nome"
+    "qt_votos": "votos",
+    "ds_genero": "sexo",
+    "nm_candidato": "nome"
 })
 
 # 3. Pegar os mais votados (top 10)
