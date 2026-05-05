@@ -15,3 +15,9 @@ estado = st.text_input('coloque aqui a sigla do estado')
 if estado:
   filtrado = df[df['partido'].str.upper() == partido.upper()]
   st.dataframe(filtrado)
+
+nome = st.text_input('coloque aqui o nome do deputado')
+
+if nome:
+  filtrado = df[df['partido']st.upper() == partido.upper()]
+  st.dataframe(filtrado)
